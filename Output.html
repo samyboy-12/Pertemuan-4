@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Output</title>
+    <script>
+        function hitung() {
+            var x = document.getElementById("nilai1").value;
+            var y = document.getElementById("nilai2").value;
+            var hasil = parseInt(x) + parseInt(y);
+            document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+        }
+    </script>
+</head>
+<body>
+    <label for="nilai1">Nilai 1:</label>
+    <input type="number" id="nilai1" name="nilai1"><br><br>
+    <label for="nilai2">Nilai 2:</label>
+    <input type="number" id="nilai2" name="nilai2"><br><br>
+    <button onclick="hitung()">Hitung</button>
+    <output id="hasil"></output>
+</body>
+</html>
